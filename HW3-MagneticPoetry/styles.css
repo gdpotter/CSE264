@@ -1,0 +1,103 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#toolbar {
+  position: absolute;
+  background: rgba(255, 255, 255, .3);
+  z-index: 10;
+  padding: 10px;
+  color: #fff;
+  width: 303px;
+  left: 50%;
+  margin-left: -151px;
+  border-radius: 0 0 5px 5px;
+}
+
+#text {
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 2px solid #2C6CDB;
+  opacity: .75;
+  outline: none;
+  transition: opacity .5s;
+  margin: 0;
+
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  border-radius: 4px;
+  width: 250px;
+}
+
+#add {
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: 2px solid #2C6CDB;
+  outline: none;
+  transition: opacity .5s;
+  margin: 0;
+
+  cursor: pointer;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555555;
+  vertical-align: middle;
+  border-radius: 4px;
+}
+
+
+#text:focus {
+  opacity: 1;
+}
+
+#board {
+  z-index: 1;
+  background: #000;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+}
+
+#board button {
+  z-index: 9;
+  font-size: 14px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  color: #000;
+  background: #fff;
+  outline: none;
+  position: absolute;
+}
+
+#delete {
+  z-index: 8;
+  position: absolute;
+  right: -130px;
+  bottom: -110px;
+  width: 100px;
+  height: 50px;
+  padding: 25px 10px;
+  background: rgba(179, 32, 32, .6);
+  border: 5px solid #B32020;
+  transition: bottom .5s, right .5s;
+  overflow: hidden;
+  text-align: center;
+  color: #fff;
+}

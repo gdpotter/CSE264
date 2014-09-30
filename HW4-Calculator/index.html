@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="styles.css" />
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" class="full" id="display" readonly />
+    <div class="row">
+      <button class="key num-key" data-keycode="49">1</button>
+      <button class="key num-key" data-keycode="50">2</button>
+      <button class="key num-key" data-keycode="51">3</button>
+      <button class="key op-key" data-keycode="43">+</button>
+    </div>
+    <div class="row">
+      <button class="key num-key" data-keycode="52">4</button>
+      <button class="key num-key" data-keycode="53">5</button>
+      <button class="key num-key" data-keycode="54">6</button>
+      <button class="key op-key" data-keycode="45">-</button>
+    </div>
+    <div class="row">
+      <button class="key num-key" data-keycode="55">7</button>
+      <button class="key num-key" data-keycode="56">8</button>
+      <button class="key num-key" data-keycode="57">9</button>
+      <button class="key op-key" data-keycode="42">*</button>
+    </div>
+    <div class="row">
+      <button class="key num-key" data-keycode="48">0</button>
+      <button class="key" id="decimal" data-keycode="46">.</button>
+      <button class="key" id="plus-minus" data-keycode="124">+/-</button>
+      <button class="key op-key" data-keycode="47">/</button>
+    </div>
+    <div class="row">
+      <button class="key half-key" id="clear">C</button>
+      <button class="key half-key" data-keycode="13" id="calculate">=</button>
+    </div>
+  </div>
+  
+  <script src="calculator.js"></script>
+</body>
+</html>
