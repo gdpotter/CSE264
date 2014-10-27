@@ -1,0 +1,115 @@
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1 {
+  background-color: #3498db;
+  margin: -8px -8px 0.67em -8px;
+  padding: 16px 8px 8px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 2.5em;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+table thead tr {
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+}
+
+table tbody tr {
+  border-bottom: 1px solid #fff;
+}
+
+table tbody td {
+  padding: 3px 5px;
+}
+
+table tbody tr.selected {
+  background-color: #ecf0f1;
+}
+
+#tasks, #add-form {
+  float: left;
+  margin: 0 25px 0 10px;
+}
+
+#tasks {
+  width: 500px;
+}
+
+#add-form {
+  width: 350px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+.form-group.right {
+  text-align: right;
+}
+
+form input[type=text], form select {
+  width: 100%;
+  font-size: 14px;
+  display: block;
+  padding: 6px 12px;
+  line-height: 1.5;
+  color: #555;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color ease-in-out .15s;
+}
+
+form input[type=text]:focus, form select:focus {
+  border: 1px solid #2c3e50;
+}
+
+input[type=submit], input[type=button], button {
+  font-size: 14px;
+  display: inline-block;
+  padding: 6px 20px;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  outline: none;
+}
+
+input[type=submit].red {
+  background-color: #c0392b;
+}
+
+input[type=submit].green {
+  background-color: #27ae60;
+}
+
+
+input[type=submit]:active, input[type=button]:active, button:active {
+  background-color: #2c3e50;
+}
+
+form .form-group input.show-class, label.show-class {
+  display: none;
+}
+
+input#delete {
+  display: none;
+}
